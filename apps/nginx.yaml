@@ -1,11 +1,11 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: nginx
+  name: nginx-release-1.0
   namespace: fleet-default
 spec:
   repo: https://github.com/camuzard/fleet
-  branch: master
+  branch: release/1.0
   targetNamespace: dev
   paths:
   - nginx
