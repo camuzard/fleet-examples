@@ -1,0 +1,17 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ include "nginx.fullname" . }}
+  labels:
+    {{- include "nginx.labels" . | nindent 4 }}
+spec:
+  ports:
+  - port: {{ .Values.service.port }}
+    targetPort: http
+    protocol: TCP
+  selector:
+    {{- include "nginx.selectorLabels" . | nindent 4 }}
+  type: LoadBalancer
+  loadBalancerSourceRanges:
+    - {{ .Values.service.allowedIP }}

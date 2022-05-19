@@ -1,0 +1,9 @@
+kind: ClusterGroup
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: op1
+  namespace: fleet-default
+spec:
+  selector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: c-infra-dev02-blue-ref-eu-west-1

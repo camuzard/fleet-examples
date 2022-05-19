@@ -1,0 +1,14 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: nginx
+  namespace: fleet-default
+spec:
+  repo: https://github.com/camuzard/fleet
+  branch: master
+  targetNamespace: dev
+  paths:
+  - nginx
+  targets:
+  - name: dev
+    clusterGroup: dev-group

@@ -1,0 +1,11 @@
+namespace: test
+helm:
+  chart: "./helm"
+# targetCustomizations:
+# - name: dev
+#   # clusterSelector:
+#   #   matchLabels:
+#   #     env: dev
+#   clusterGroup: dev
+#   kustomize:
+#     dir: kustomize/overlays/dev
