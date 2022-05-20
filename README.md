@@ -31,5 +31,3 @@ Now, let's use the release/1.0 branch and deploy a release/1.0 bundle
 git checkout release/1.0
 kubectl apply -f apps/nginx.yaml
 ```
-
-

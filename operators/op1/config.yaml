@@ -4,11 +4,11 @@ metadata:
   name: op1-config
   namespace: fleet-default
 spec:
-  repo: https://github.com/camuzard/fleet
+  repo: https://github.com/camuzard/operators
   branch: master
   targetNamespace: dev
   paths:
-  - operators/op1/config
+  - op1/nginx
   targets:
   - name: dev
     clusterGroup: op1
